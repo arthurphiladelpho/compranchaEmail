@@ -2,37 +2,319 @@
 <html>
 	<head>
 		<!-- <title>Comprancha</title> -->
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		
 		<style type="text/css">
-			
-			html, body {
-    			height: 100%;
-			}
+		
+    		#container {
+    			overflow:hidden;
+    			position: relative; 
+    			width: 600px; 
+            	height: 5500px; 
+            	margin-left: 330px;
+    		}
 
-			div.image {
-  				 content:url(comprancha.png);
-			}​
+            #container .under {
+            	float: left;
+            	margin-right:4px;
+            }
 
-			.main {
-			    height: 100%;
-			    width: 100%;
-			    display: table;
-			}
+            #bons {
+             	/*background-color:#cccccc;*/
+             	width:199px;
+             	height: 48px;
+            	position: absolute; 
+            }
 
-			#wrapper {
-					margin : 0 auto;
-			    display: table-cell;
-			    height: 100%;
-			    vertical-align: middle;
-			}
+            #como {
+            	/*background-color:#dddddd;*/
+             	width:199px;
+             	height: 48px;
+            	position: absolute; 
+            	margin-left: 200px;
+            }
+
+            #quem {
+            	/*background-color:#bbbbbb;*/
+             	width:199px;
+             	height: 48px;
+            	position: absolute; 
+            	margin-left: 400px;
+            }
+
+            #supeata {
+            	/*background-color:#aaaaaa;*/
+             	width:598px;
+             	height: 860px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 50px;
+            }
+
+            #rack {
+            	/*background-color:#bbbbbb;*/
+             	width:598px;
+             	height: 1150px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 913px;
+            }
+
+              #rio {
+            	/*background-color:#eaf43b;*/
+             	width:598px;
+             	height: 110px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 2065px;
+            }
+
+             #rio2 {
+            	/*background-color:#bb45fa;*/
+             	width:598px;
+             	height: 280px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 2175px;
+            }
+
+             #rio3 {
+            	/*background-color:#34ecf1;*/
+             	width:598px;
+             	height: 820px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 2455px;
+            }
+
+             #casa {
+            	/*background-color:#000000;*/
+             	width:598px;
+             	height: 640px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 3275px;
+            }
+
+             #fotos {
+            	/*background-color:#aaaaaa;*/
+             	width:598px;
+             	height: 250px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 3915px;
+            }
+
+             #pranchas {
+        	    	/*background-color:#be33be;*/
+        	     	width:598px;
+        	     	height: 710px;
+        	    	position: absolute; 
+        	    	margin-left: 1px;
+        	    	margin-top: 4167px;
+            }
+
+             #surfista {
+        	    	/*background-color:#affebd;*/
+        	     	width:598px;
+        	     	height: 110px;
+        	    	position: absolute; 
+        	    	margin-left: 1px;
+        	    	margin-top: 4877px;
+            }
+
+             #circulo {
+        	    	/*background-color:#ff4557;*/
+        	     	width:199px;
+        	     	height: 125px;
+        	    	position: absolute; 
+        	    	margin-left: 1px;
+        	    	margin-top: 4990px;
+            }
+
+            #maluco {
+        	    	/*background-color:#ab34f8;*/
+        	     	width:199px;
+        	     	height: 125px;
+        	    	position: absolute; 
+        	    	margin-left: 201px;
+        	    	margin-top: 4990px;
+            }
+
+             #maluco {
+        	    	/*background-color:#ab34f8;*/
+        	     	width:199px;
+        	     	height: 125px;
+        	    	position: absolute; 
+        	    	margin-left: 201px;
+        	    	margin-top: 4990px;
+            }
+
+             #vizu {
+        	    	/*background-color:#34bcf4;*/
+        	     	width:199px;
+        	     	height: 125px;
+        	    	position: absolute; 
+        	    	margin-left: 402px;
+        	    	margin-top: 4990px;
+            }
+
+            #categorias {
+            		/*background-color:#169ed6;*/
+        	     	width: 599px;
+        	     	height: 120px;
+        	    	position: absolute; 
+        	    	margin-left: 1px;
+        	    	margin-top: 5116px;
+            }
+
+            #surf {
+            	/*background-color:#234567;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 5237px;
+            }
+
+            #kite {
+            	/*background-color:#123456;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 150px;
+            	margin-top: 5237px;
+            }
+
+             #snow {
+            	/*background-color:#345678;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 300px;
+            	margin-top: 5237px;
+            }
+
+             #wind {
+            	/*background-color:#456789;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 450px;
+            	margin-top: 5237px;
+            }
+
+            #sup {
+            	/*background-color:#56789a;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 5292px;
+            }
+
+            #skate {
+            	/*background-color:#6789ab;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 150px;
+            	margin-top: 5292px;
+            }
+
+              #body {
+            	/*background-color:#789abc;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 300px;
+            	margin-top: 5292px;
+            }
+
+            #wake {
+            	/*background-color:#89abcd;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 450px;
+            	margin-top: 5292px;
+            }
+
+              #neo {
+            	/*background-color:#9abcde;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 1px;
+            	margin-top: 5347px;
+            }
+
+            #foto {
+            	/*background-color:#abcdef;*/
+             	width: 150px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 150px;
+            	margin-top: 5347px;
+            }
+
+            #outro {
+            	/*background-color:#bcdef0;*/
+             	width: 300px;
+             	height: 55px;
+            	position: absolute; 
+            	margin-left: 300px;
+            	margin-top: 5347px;
+            }
+
+            a.fill {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
 
 		</style>
 
-	</head>
+        <script type="text/javascript">
 
+
+
+        </script>
+
+	</head>
 	<body>
-		<div class="main">
-			<div class="image" id="wrapper"></div>​
+		<div id="container">
+			<div class="under"><img src="comprancha.png"/></div>
+			<div id="bons"><a href="http://www.comprancha.com/bons-de-onda/" class="fill"></a></div>
+			<div id="como"><a href="http://www.comprancha.com/como-funciona/" class="fill"></a></div>
+			<div id="quem"><a href="http://www.comprancha.com/quemtem/"class="fill" ></a></div>
+			<div id="supeata"><a href="http://www.comprancha.com/" class="fill"></a></div>
+			<div id="rack"><a href="http://www.comprancha.com/regulamento-rack/" class="fill"></a></div>
+			<div id="rio"><a href="http://www.comprancha.com/premiacao-rio-photo-festival-comprancha-2/" class="fill"></a></div>
+			<div id="rio2"><a href="www.riophotofestival.com" class="fill"></a></div>
+			<div id="rio3"><a href="http://www.comprancha.com/premiacao-rio-photo-festival-comprancha-2/" class="fill"></a></div>
+			<div id="casa"><a href="http://www.comprancha.com/festa-da-red-bull-na-garagem-do-comprancha/" class="fill"></a></div>
+			<div id="fotos"><a href="http://www.comprancha.com/category/momentos-comprancha/" class="fill"></a></div>
+			<div id="pranchas"><a href="http://www.comprancha.com/" class="fill"></a></div>
+			<div id="surfista"><a href="https://www.catarse.me/pt/reconhecendosurf" class="fill"></a></div>
+			<div id="circulo"><a href="http://www.loja.philrajzman.com.br/" class="fill"></a></div>
+			<div id="maluco"><a href="http://www.hotstick.com.br/" class="fill"></a></div>
+			<div id="vizu"><a href="http://www.vizubox.com" class="fill"></a></div>
+			<div id="categorias"><a href="http://www.comprancha.com/categorias/" class="fill"></a></div>
+			<div id="surf"><a href="http://www.comprancha.com/categoria/surf/" class="fill"></a></div>
+			<div id="kite"><a href="http://www.comprancha.com/categoria/kitesurf/" class="fill"></a></div>
+			<div id="snow"><a href="http://www.comprancha.com/categoria/snowboard/" class="fill"></a></div>
+			<div id="wind"><a href="http://www.comprancha.com/categoria/windsurf/" class="fill"></a></div>
+			<div id="sup"><a href="http://www.comprancha.com/categoria/stand-up-paddle/" class="fill"></a></div>
+			<div id="skate"><a href="http://www.comprancha.com/categoria/skate/" class="fill"></a></div>
+			<div id="body"><a href="http://www.comprancha.com/categoria/bodyboard/" class="fill"></a></div>
+			<div id="wake"><a href="http://www.comprancha.com/categoria/wakeboard/" class="fill"></a></div>
+			<div id="neo"><a href="http://www.comprancha.com/categoria/neoprene/" class="fill"></a></div>
+			<div id="foto"><a href="http://www.comprancha.com/categoria/foto-e-filmagem/" class="fill"></a></div>
+			<div id="outro"><a href="http://www.comprancha.com/categoria/outros/" class="fill"></a></div>
 		</div>
 	</body>
 </html>
